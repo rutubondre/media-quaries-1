@@ -5,10 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media quaries</title>
+    <style>
+    body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .heading {
+            text-align: center;
+            font-size: 60px;
+        }
+        
+        .parent {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .img {
+            width: 500px;
+        }
+        
+        .paragraph {
+            font-size: 40px;
+        }
+        
+        .navbar {
+            background-color: black;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .text-color {
+            color: #fff;
+            font-size: 20px;
+            padding: 15px;
+            margin-left: 15px;
+        }
+        
+        .text-color:hover {
+            color: green;
+        }
+        
+        .btn {
+            border: 10px solid #fff;
+            padding: 5px 10px
+        }
+        
+        .button {
+            background-color: green;
+            padding: 5px 10px;
+        }
+        /*mobile device*/
+        
+        @media screen and (max-width:500px) {
+            .heading {
+                font-size: 35px;
+            }
+            .img {
+                width: 300px;
+            }
+            .paragraph {
+                font-size: 20px;
+            }
+            .text-color {
+                margin-left: 2px;
+                padding: 10px;
+            }
+        }
+    }
+    /* tablet device*/
+    @media screen and (min-width:501px) and (max-width:768px) {
+        .heading {
+            font-size: 45px;
+        }
+    }
+    </style>
+
 </head>
 
 <body>
+    <div class="navbar">
+        <span class="text-color">Home</span>
+        <span class="text-color">pages</span>
+        <span class="text-color">Research</span>
+        <span class="text-color">Service</span>
+        <span class="text-color">Blog</span>
+        </span>
+    </div>
+    <h1 class="heading">Mdical store</h1>
+    <div class="parent">
+        <img src="https://media.licdn.com/dms/image/C4D12AQHk-xY4KhgkDQ/article-cover_image-shrink_600_2000/0/1635919412547?e=2147483647&v=beta&t=yxViN2izWv7sWniq_i_PYL4jbfP3K2hNZEYNYGwGzqQ" class="img" />
+
+        <div class="paragraph">
+            <p>We make <br/>Quality Healthcare</p>
+
+
+            <h6>Same-Day Emergency Appointments!</h6>
+
+            <button class="btn">see now we can help</button>
+            <button class="button">make an appoinment</button>
+        </div>
 
 </body>
+
+</html>
 
 </html>

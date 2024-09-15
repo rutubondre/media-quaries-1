@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media quaries</title>
     <style>
-    body {
+        body {
             margin: 0;
             padding: 0;
         }
@@ -43,7 +43,7 @@
             color: #fff;
             font-size: 20px;
             padding: 15px;
-            margin-left: 15px;
+            margin-left: px;
         }
         
         .text-color:hover {
@@ -59,6 +59,11 @@
             background-color: green;
             padding: 5px 10px;
         }
+        
+        .ritu {
+            height: 400px;
+            width: 200px
+        }
         /*mobile device*/
         
         @media screen and (max-width:500px) {
@@ -72,17 +77,31 @@
                 font-size: 20px;
             }
             .text-color {
-                margin-left: 2px;
+                margin-left: none;
                 padding: 10px;
+                padding: 5px;
+            }
+            .hide {
+                display: none;
             }
         }
-    }
-    /* tablet device*/
-    @media screen and (min-width:501px) and (max-width:768px) {
-        .heading {
-            font-size: 45px;
+        /* tablet device*/
+        
+        @media screen and (min-width:501px) and (max-width:768px) {
+            .heading {
+                font-size: 40px;
+            }
+            .img {
+                width: 400px;
+            }
         }
-    }
+        /*desktop device*/
+        
+        @media screen and (min-width:769px) {
+            .font-size {
+                font-size: 50px;
+            }
+        }
     </style>
 
 </head>
@@ -104,11 +123,21 @@
             <p>We make <br/>Quality Healthcare</p>
 
 
-            <h6>Same-Day Emergency Appointments!</h6>
+            <h6 class="hide">Same-Day Emergency Appointments!</h6>
 
-            <button class="btn">see now we can help</button>
-            <button class="button">make an appoinment</button>
+            <button class="btn hide">see now we can help</button>
+            <button class="button hide">make an appoinment</button>
         </div>
+    </div>
+    <div class="container">
+        <div class="ritu">
+
+
+
+        </div>
+
+
+    </div>
 
 </body>
 
